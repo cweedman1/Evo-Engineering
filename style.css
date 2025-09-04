@@ -75,3 +75,21 @@ nav a.active { color:#fff; border-bottom:2px solid #ffd700; padding-bottom:2px; 
 .feature-link { text-decoration:none; color:inherit; }
 .feature-link .feature { transition: transform 0.3s, box-shadow 0.3s; }
 .feature-link .feature:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.7); }
+
+
+/* Page hero for subpages */
+.page-hero {
+  height: 65vh; /* rectangular, shows full image */
+  background: no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.page-hero::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+}
