@@ -30,7 +30,11 @@ nav a {
   transition: color 0.3s;
 }
 nav a:hover { color: #fff; }
-.logo { height: 50px; }
+.logo {
+  height: 50px;       /* keeps it small visually */
+  width: auto;        /* maintain aspect ratio */
+  max-width: 120px;   /* safety cap for responsive layouts */
+}
 .hero {
   height: 80vh;
   background: url('images/home.jpg') no-repeat center center/cover;
