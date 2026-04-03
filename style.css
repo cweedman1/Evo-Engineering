@@ -127,3 +127,6 @@ nav a.active { color:#fff; border-bottom:2px solid #ffd700; padding-bottom:2px; 
   color: #ffffff;
   text-decoration: underline;
 }
+.project-link a:visited {
+  color: #ffd700;
+}
