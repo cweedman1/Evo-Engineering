@@ -84,7 +84,7 @@ footer a:focus-visible,
 
 .hero {
   min-height: 80vh;
-  background: url('images/home.jpg') no-repeat center center/cover;
+  background: url('images/home.webp') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,12 +140,17 @@ footer a:focus-visible,
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.feature-image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
 .feature img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
 }
 
 .feature:hover {
@@ -161,8 +166,11 @@ footer {
 }
 
 footer a {
-  color: #ffd700;
-  text-decoration: none;
+  color: #ffe45c;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 @keyframes fadeIn {

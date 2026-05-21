@@ -30,6 +30,8 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://www.evo.engineering">
 
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preload" as="image" href="images/home.webp" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -64,46 +66,56 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Building Sovereign Systems</h1>
-      <p>
-        We design and deploy systems that stabilize, optimize, and modernize infrastructure across energy, finance, and software.
-      </p>
-    </div>
-  </section>
-
-  <section class="features">
-
-    <a href="energy.html" class="feature-link">
-      <div class="feature">
-        <img src="images/energy.webp" alt="Energy systems and grid infrastructure engineering" loading="lazy" decoding="async">
-        <h2>Energy</h2>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Building Sovereign Systems</h1>
+        <p>
+          We design and deploy systems that stabilize, optimize, and modernize infrastructure across energy, finance, and software.
+        </p>
       </div>
-    </a>
+    </section>
 
-    <a href="finance.html" class="feature-link">
-      <div class="feature">
-        <img src="images/finance1.webp" alt="Financial systems engineering and optimization" loading="lazy" decoding="async">
-        <h2>Finance</h2>
-      </div>
-    </a>
+    <section class="features">
 
-    <a href="manufacturing.html" class="feature-link">
-      <div class="feature">
-        <img src="images/manufacturing2.webp" alt="Industrial manufacturing systems engineering" loading="lazy" decoding="async">
-        <h2>Manufacturing</h2>
-      </div>
-    </a>
+      <a href="energy.html" class="feature-link">
+        <div class="feature">
+          <div class="feature-image">
+            <img src="images/energy-800.webp" srcset="images/energy-400.webp 400w, images/energy-800.webp 800w" sizes="(max-width: 720px) 90vw, 300px" alt="Energy systems and grid infrastructure engineering" width="800" height="600" loading="lazy" decoding="async">
+          </div>
+          <h2>Energy</h2>
+        </div>
+      </a>
 
-    <a href="software.html" class="feature-link">
-      <div class="feature">
-        <img src="images/software.webp" alt="Software systems and infrastructure engineering" loading="lazy" decoding="async">
-        <h2>Software</h2>
-      </div>
-    </a>
+      <a href="finance.html" class="feature-link">
+        <div class="feature">
+          <div class="feature-image">
+            <img src="images/finance1-800.webp" srcset="images/finance1-400.webp 400w, images/finance1-800.webp 800w" sizes="(max-width: 720px) 90vw, 300px" alt="Financial systems engineering and optimization" width="800" height="600" loading="lazy" decoding="async">
+          </div>
+          <h2>Finance</h2>
+        </div>
+      </a>
 
-  </section>
+      <a href="manufacturing.html" class="feature-link">
+        <div class="feature">
+          <div class="feature-image">
+            <img src="images/manufacturing2-800.webp" srcset="images/manufacturing2-400.webp 400w, images/manufacturing2-800.webp 800w" sizes="(max-width: 720px) 90vw, 300px" alt="Industrial manufacturing systems engineering" width="800" height="600" loading="lazy" decoding="async">
+          </div>
+          <h2>Manufacturing</h2>
+        </div>
+      </a>
+
+      <a href="software.html" class="feature-link">
+        <div class="feature">
+          <div class="feature-image">
+            <img src="images/software-800.webp" srcset="images/software-400.webp 400w, images/software-800.webp 800w" sizes="(max-width: 720px) 90vw, 300px" alt="Software systems and infrastructure engineering" width="800" height="600" loading="lazy" decoding="async">
+          </div>
+          <h2>Software</h2>
+        </div>
+      </a>
+
+    </section>
+  </main>
 
   <footer>
     <p>
