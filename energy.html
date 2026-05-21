@@ -17,13 +17,15 @@
   <meta property="og:description" content="Operational energy systems for modernization, resilience, and infrastructure stability.">
   <meta property="og:url" content="https://www.evo.engineering/energy.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.evo.engineering/images/energy.jpg">
+  <meta property="og:image" content="https://www.evo.engineering/images/evo_logo.jpg">
+  <meta property="og:image:alt" content="Evo Engineering logo">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Energy Systems — Evo Engineering">
   <meta name="twitter:description" content="Grid modernization, DER orchestration, and resilience engineering.">
-  <meta name="twitter:image" content="https://www.evo.engineering/images/energy.jpg">
+  <meta name="twitter:image" content="https://www.evo.engineering/images/evo_logo.jpg">
+  <meta name="twitter:image:alt" content="Evo Engineering logo">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://www.evo.engineering/energy.html">
@@ -37,12 +39,18 @@
   <nav>
     <div class="brand">
       <a href="index.html" class="brand-link">
-        <img src="images/evo_logo.webp" alt="Evo Engineering Logo" class="logo">
+        <img src="images/evo_logo-128.jpg" alt="Evo Engineering Logo" class="logo" width="128" height="128">
         <span class="brand-name">Evo Engineering</span>
       </a>
     </div>
 
-    <ul>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul id="primary-nav" class="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="about.html">About</a></li>
@@ -56,7 +64,7 @@
   </nav>
 </header>
 
-<section class="page-hero" style="background-image:url('images/energy.jpg');">
+<section class="page-hero" style="background-image:url('images/energy.webp');">
   <div class="hero-content">
     <h1>Energy & Grid Renewal</h1>
     <p>Modernization · Resilience · Sovereignty</p>
@@ -97,5 +105,6 @@
   </p>
 </footer>
 
+<script src="nav.js" defer></script>
 </body>
 </html>

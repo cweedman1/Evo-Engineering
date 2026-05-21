@@ -7,11 +7,23 @@
   <title>Projects | Evo Engineering</title>
 
   <meta name="description" content="Systems deployed across infrastructure, computation, and industrial environments.">
+  <meta name="keywords" content="Evo Engineering projects, infrastructure systems, compute systems, industrial systems, compliance intelligence, energy systems">
+  <meta name="author" content="Evo Engineering">
 
   <meta property="og:title" content="Projects — Evo Engineering">
   <meta property="og:description" content="Real systems built across infrastructure, energy, and computation.">
-  <meta property="og:image" content="https://evo.engineering/images/projects.webp">
-  <meta property="og:url" content="https://evo.engineering/projects.html">
+  <meta property="og:url" content="https://www.evo.engineering/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.evo.engineering/images/evo_logo.jpg">
+  <meta property="og:image:alt" content="Evo Engineering logo">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects — Evo Engineering">
+  <meta name="twitter:description" content="Real systems built across infrastructure, energy, and computation.">
+  <meta name="twitter:image" content="https://www.evo.engineering/images/evo_logo.jpg">
+  <meta name="twitter:image:alt" content="Evo Engineering logo">
+
+  <link rel="canonical" href="https://www.evo.engineering/projects.html">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,12 +34,18 @@
   <nav>
     <div class="brand">
       <a href="index.html" class="brand-link">
-        <img src="images/evo_logo.webp" alt="Evo Engineering Logo" class="logo">
+        <img src="images/evo_logo-128.jpg" alt="Evo Engineering Logo" class="logo" width="128" height="128">
         <span class="brand-name">Evo Engineering</span>
       </a>
     </div>
 
-    <ul>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul id="primary-nav" class="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="about.html">About</a></li>
@@ -62,7 +80,7 @@
   </p>
   <p><strong>Result:</strong> ~95% compute reduction on real-world workloads</p>
   <p class="project-link">
-    <a href="https://helixcompute.io" target="_blank">View System →</a>
+    <a href="https://helixcompute.io" target="_blank" rel="noopener">View System →</a>
   </p>
 </div>
     <!-- HLX DELTA -->
@@ -76,7 +94,7 @@
       </p>
       <p><strong>Result:</strong> Significant reduction on real telemetry datasets</p>
       <p class="project-link">
-        <a href="https://github.com/evo-engineering-llc/hlx-delta" target="_blank">View on GitHub →</a>
+        <a href="https://github.com/evo-engineering-llc/hlx-delta" target="_blank" rel="noopener">View on GitHub →</a>
       </p>
     </div>
 
@@ -90,7 +108,7 @@
         Flags ambiguous or unrecoverable structural modifications.
       </p>
       <p class="project-link">
-        <a href="https://github.com/evo-engineering-llc/hlx-photo" target="_blank">View on GitHub →</a>
+        <a href="https://github.com/evo-engineering-llc/hlx-photo" target="_blank" rel="noopener">View on GitHub →</a>
       </p>
     </div>
 
@@ -115,7 +133,7 @@
         Converts operational complexity into structured decision support.
       </p>
       <p class="project-link">
-        <a href="https://maven.evo.engineering" target="_blank">View System →</a>
+        <a href="https://maven.evo.engineering" target="_blank" rel="noopener">View System →</a>
       </p>
     </div>
 
@@ -129,7 +147,7 @@
         Converts waste into usable material streams at industrial scale.
       </p>
       <p class="project-link">
-        <a href="https://github.com/evo-engineering-llc/phoenix-system" target="_blank">View on GitHub →</a>
+        <a href="https://github.com/evo-engineering-llc/phoenix-system" target="_blank" rel="noopener">View on GitHub →</a>
       </p>
     </div>
 
@@ -151,5 +169,6 @@
   </p>
 </footer>
 
+<script src="nav.js" defer></script>
 </body>
 </html>
