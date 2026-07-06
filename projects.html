@@ -3,48 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Projects | Evo Engineering</title>
-
-  <meta name="description" content="Systems deployed across infrastructure, computation, and industrial environments.">
-  <meta name="keywords" content="Evo Engineering projects, infrastructure systems, compute systems, industrial systems, compliance intelligence, energy systems">
+  <meta name="robots" content="index, follow">
+  <title>What We're Building | Evo Engineering</title>
+  <meta name="description" content="Applications and systems from Evo Engineering, including Maven, NexusGrid Systems, Helix Compute, Beacon Audit, and Megamind.">
+  <meta name="keywords" content="Evo Engineering projects, Maven, NexusGrid Systems, Helix Compute, Beacon Audit, Megamind, healthcare operations, infrastructure systems, compute systems">
   <meta name="author" content="Evo Engineering">
+  <meta name="theme-color" content="#050909">
 
-  <meta property="og:title" content="Projects — Evo Engineering">
-  <meta property="og:description" content="Real systems built across infrastructure, energy, and computation.">
+  <meta property="og:title" content="What We're Building - Evo Engineering">
+  <meta property="og:description" content="Applications and systems across healthcare operations, infrastructure, computation, audits, and AI workspaces.">
   <meta property="og:url" content="https://www.evo.engineering/projects.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.evo.engineering/images/evo_logo.jpg">
-  <meta property="og:image:alt" content="Evo Engineering logo">
+  <meta property="og:image" content="https://www.evo.engineering/assets/social/social-template.png">
+  <meta property="og:image:secure_url" content="https://www.evo.engineering/assets/social/social-template.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Evo Engineering social card">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Projects — Evo Engineering">
-  <meta name="twitter:description" content="Real systems built across infrastructure, energy, and computation.">
-  <meta name="twitter:image" content="https://www.evo.engineering/images/evo_logo.jpg">
-  <meta name="twitter:image:alt" content="Evo Engineering logo">
+  <meta name="twitter:title" content="What We're Building - Evo Engineering">
+  <meta name="twitter:description" content="Applications and systems across healthcare operations, infrastructure, computation, audits, and AI workspaces.">
+  <meta name="twitter:image" content="https://www.evo.engineering/assets/social/social-template.png">
+  <meta name="twitter:image:alt" content="Evo Engineering social card">
 
   <link rel="canonical" href="https://www.evo.engineering/projects.html">
-
   <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preload" as="image" href="images/projects-hero-1200.webp" imagesrcset="images/projects-hero-600.webp 600w, images/projects-hero-800.webp 800w, images/projects-hero-1200.webp 1200w, images/projects-hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://www.evo.engineering/#organization",
-    "name": "Evo Engineering",
-    "url": "https://www.evo.engineering",
-    "logo": "https://www.evo.engineering/images/evo_logo.jpg",
-    "description": "Evo Engineering designs and deploys systems that stabilize, optimize, and modernize infrastructure across energy, finance, manufacturing, and software.",
-    "email": "mailto:contact@evo.engineering"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.evo.engineering/#organization",
+        "name": "Evo Engineering",
+        "url": "https://www.evo.engineering/",
+        "logo": "https://www.evo.engineering/images/evo_logo.jpg",
+        "description": "Evo Engineering designs and deploys systems that stabilize, optimize, and modernize infrastructure across energy, finance, manufacturing, and software.",
+        "email": "mailto:contact@evo.engineering"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.evo.engineering/#website",
+        "name": "Evo Engineering",
+        "url": "https://www.evo.engineering/",
+        "description": "Evo Engineering designs and deploys systems that stabilize, optimize, and modernize infrastructure across energy, finance, manufacturing, and software.",
+        "publisher": {
+          "@id": "https://www.evo.engineering/#organization"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.evo.engineering/projects.html#webpage",
+        "url": "https://www.evo.engineering/projects.html",
+        "name": "What We're Building | Evo Engineering",
+        "description": "Applications and systems from Evo Engineering, including Maven, NexusGrid Systems, Helix Compute, Beacon Audit, and Megamind.",
+        "isPartOf": {
+          "@id": "https://www.evo.engineering/#website"
+        },
+        "publisher": {
+          "@id": "https://www.evo.engineering/#organization"
+        }
+      }
+    ]
   }
   </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-<header>
-  <nav>
+<header class="site-header">
+  <nav class="nav" aria-label="Primary navigation">
     <div class="brand">
       <a href="index.html" class="brand-link">
         <img src="images/evo_logo-128.jpg" alt="Evo Engineering Logo" class="logo" width="128" height="128">
@@ -52,15 +90,16 @@
       </a>
     </div>
 
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span class="sr-only">Menu</span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
     </button>
 
-    <ul id="primary-nav" class="nav-menu">
+    <ul id="primary-nav" class="nav-menu" data-nav-links>
       <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="energy.html">Energy</a></li>
       <li><a href="finance.html">Finance</a></li>
@@ -72,112 +111,164 @@
   </nav>
 </header>
 
-<section class="page-hero" style="background-image:url('images/projects.webp');">
+<section class="page-hero">
+  <picture class="hero-media" aria-hidden="true">
+    <source srcset="images/projects-hero-600.webp 600w, images/projects-hero-800.webp 800w, images/projects-hero-1200.webp 1200w, images/projects-hero-1600.webp 1600w" sizes="100vw" type="image/webp">
+    <img src="images/projects-hero-1200.webp" alt="" width="1200" height="675" fetchpriority="high" decoding="async">
+  </picture>
   <div class="hero-content">
-    <h1>Projects</h1>
-    <p>Systems deployed across infrastructure, computation, and industrial environments.</p>
+    <h1>What We're Building</h1>
+    <p>Applications first. Repositories as evidence.</p>
   </div>
 </section>
 
 <main class="container">
   <div class="content">
-    
-<!-- HELIX COMPUTE -->
-<div class="project-block">
-  <h2>Helix Compute — Selective Execution Engine</h2>
-  <p>
-    A deterministic execution layer that eliminates redundant computation in modern data pipelines.
-  </p>
-  <p style="color:#aaa; font-style:italic;">
-    Processes only what changed. No recompute. No black box.
-  </p>
-  <p><strong>Result:</strong> ~95% compute reduction on real-world workloads</p>
-  <p class="project-link">
-    <a href="https://helixcompute.io" target="_blank" rel="noopener">View System →</a>
-  </p>
-</div>
-    <!-- HLX DELTA -->
+
     <div class="project-block">
-      <h2>HLX Delta — State Compression Engine</h2>
+      <h2>Maven</h2>
       <p>
-        A system for reducing data transfer and compute overhead while preserving exact, verifiable reconstruction.
+        Healthcare operations, compliance, replay, and workflow intelligence.
       </p>
-      <p style="color:#aaa; font-style:italic;">
-        Designed for telemetry, streaming systems, and distributed synchronization.
+      <p class="project-note">
+        Making complex healthcare systems easier to operate.
       </p>
-      <p><strong>Result:</strong> Significant reduction on real telemetry datasets</p>
       <p class="project-link">
-        <a href="https://github.com/evo-engineering-llc/hlx-delta" target="_blank" rel="noopener">View on GitHub →</a>
+        <a href="https://maven.evo.engineering" target="_blank" rel="noopener">View System -></a>
       </p>
     </div>
 
-    <!-- HLX PHOTO -->
     <div class="project-block">
-      <h2>HLX Photo — Reconstruction System</h2>
+      <h2>NexusGrid Systems</h2>
       <p>
-        Image restoration and integrity validation system. Recovers structure from degraded inputs without training or generative models.
+        Infrastructure resilience, orchestration, energy, and industrial systems.
       </p>
-      <p style="color:#aaa; font-style:italic;">
-        Flags ambiguous or unrecoverable structural modifications.
+      <p class="project-note">
+        Engineering coordination, not just capacity.
       </p>
       <p class="project-link">
-        <a href="https://github.com/evo-engineering-llc/hlx-photo" target="_blank" rel="noopener">View on GitHub →</a>
+        <a href="https://nexusgrid.systems/" target="_blank" rel="noopener">View System -></a>
       </p>
     </div>
 
-    <!-- APEX (INTENTIONALLY LIMITED) -->
     <div class="project-block">
-      <h2>Apex — Rendering Research</h2>
+      <h2>Helix Compute</h2>
       <p>
-        Experimental work exploring high-performance rendering techniques.
+        Reducing redundant computation across pipelines, AI, replay systems, and distributed workloads.
       </p>
-      <p style="color:#aaa; font-style:italic;">
-        Details not publicly available.
+      <p class="project-note">
+        Remember what you've already computed.
+      </p>
+      <p class="project-link">
+        <a href="https://helixcompute.io" target="_blank" rel="noopener">View System -></a>
       </p>
     </div>
 
-    <!-- MAVEN -->
     <div class="project-block">
-      <h2>Maven — Compliance Intelligence System</h2>
+      <h2>Beacon Audit</h2>
       <p>
-        A decision support system for healthcare operations, integrating regulatory workflows into a unified operational layer.
+        Practical website and technical audits in plain English.
       </p>
-      <p style="color:#aaa; font-style:italic;">
-        Converts operational complexity into structured decision support.
+      <p class="project-note">
+        See clearly. Fix priorities. Protect performance.
       </p>
       <p class="project-link">
-        <a href="https://maven.evo.engineering" target="_blank" rel="noopener">View System →</a>
+        <a href="https://beacon-audit.com/" target="_blank" rel="noopener">View System -></a>
       </p>
     </div>
 
-    <!-- PHOENIX -->
     <div class="project-block">
-      <h2>Phoenix — Composite Blade Conversion System</h2>
+      <h2>Megamind</h2>
       <p>
-        A deployable system for converting wind turbine blade waste into usable materials using staged industrial processing.
+        My admittedly over-engineered AI workspace.
       </p>
-      <p style="color:#aaa; font-style:italic;">
-        Converts waste into usable material streams at industrial scale.
+      <p>
+        Equal parts research assistant, software architect, documentation engine, code reviewer, coffee substitute, and occasional source of terrible jokes.
+      </p>
+      <p class="project-note">
+        Built because I got tired of rebuilding context every morning.
       </p>
       <p class="project-link">
-        <a href="https://github.com/evo-engineering-llc/phoenix-system" target="_blank" rel="noopener">View on GitHub →</a>
+        <a href="https://mega-mind.systems/" target="_blank" rel="noopener">View System -></a>
+      </p>
+    </div>
+
+    <div class="project-block">
+      <h2>Underneath All of It</h2>
+      <p>
+        Everything at Evo Engineering starts with the same question:
+      </p>
+      <p class="project-question">
+        How do we reduce unnecessary work while improving trust in complex systems?
+      </p>
+      <p>
+        Sometimes that becomes healthcare software. Sometimes infrastructure modeling. Sometimes developer tooling. Sometimes AI.
+      </p>
+      <p>
+        The domains change. The engineering philosophy doesn't.
+      </p>
+    </div>
+
+    <div class="project-block">
+      <h2>Open Research</h2>
+      <p>
+        Much of this work is developed in public. If you're interested in the underlying algorithms, experiments, or implementation details, you can browse the research repositories.
+      </p>
+
+      <div class="research-item">
+        <h3>HLX Delta - State Compression Engine</h3>
+        <p>
+          A system for reducing data transfer and compute overhead while preserving exact, verifiable reconstruction.
+        </p>
+        <p class="project-link">
+          <a href="https://github.com/evo-engineering-llc/hlx-delta" target="_blank" rel="noopener">View on GitHub -></a>
+        </p>
+      </div>
+
+      <div class="research-item">
+        <h3>HLX Photo - Reconstruction System</h3>
+        <p>
+          Image restoration and integrity validation system. Recovers structure from degraded inputs without training or generative models.
+        </p>
+        <p class="project-link">
+          <a href="https://github.com/evo-engineering-llc/hlx-photo" target="_blank" rel="noopener">View on GitHub -></a>
+        </p>
+      </div>
+
+      <div class="research-item">
+        <h3>Phoenix - Composite Blade Conversion System</h3>
+        <p>
+          A deployable system for converting wind turbine blade waste into usable materials using staged industrial processing.
+        </p>
+        <p class="project-link">
+          <a href="https://github.com/evo-engineering-llc/phoenix-system" target="_blank" rel="noopener">View on GitHub -></a>
+        </p>
+      </div>
+
+      <div class="research-item">
+        <h3>Apex - Rendering Research</h3>
+        <p>
+          Experimental work exploring high-performance rendering techniques. Details are intentionally limited.
+        </p>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <h2>Let's Build</h2>
+      <p>
+        Evo Engineering is building systems for operators who need clarity, resilience, and less wasted motion.
+      </p>
+      <p class="project-link">
+        <a href="contact.html">Start a conversation -></a>
       </p>
     </div>
 
   </div>
 </main>
 
-<section class="content" style="margin-top:40px;">
-  <h2>Let’s Build</h2>
+<footer class="site-footer">
   <p>
-    We’re actively deploying systems across infrastructure, energy, and industrial environments.
-  </p>
-  <a href="contact.html">Start a conversation →</a>
-</section>
-
-<footer>
-  <p>
-    © 2026 Evo Engineering. All rights reserved. |
+    &copy; 2026 Evo Engineering. All rights reserved. |
     <a href="mailto:contact@evo.engineering">contact@evo.engineering</a>
   </p>
 </footer>

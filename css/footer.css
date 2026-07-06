@@ -1,0 +1,14 @@
+.site-footer {
+  background-color: var(--panel);
+  text-align: center;
+  padding: 20px;
+  color: var(--text);
+}
+
+.site-footer a {
+  color: var(--gold-strong);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}

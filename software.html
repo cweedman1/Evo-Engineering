@@ -3,33 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Software Systems & Predictive Intelligence | Evo Engineering</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Evo Engineering builds predictive intelligence systems and secure software platforms for energy, finance, and manufacturing—designed for operational clarity and real-world deployment.">
+  <meta name="robots" content="index, follow">
+  <title>Software Systems - Evo Engineering</title>
+  <meta name="description" content="Evo Engineering builds predictive intelligence systems and secure software platforms for energy, finance, and manufacturing - designed for operational clarity and real-world deployment.">
   <meta name="keywords" content="predictive intelligence, decision support systems, AI modeling, simulation software, secure platforms, infrastructure software, machine learning systems">
   <meta name="author" content="Evo Engineering">
+  <meta name="theme-color" content="#050909">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Software & Intelligence — Evo Engineering">
+  <meta property="og:title" content="Software & Intelligence - Evo Engineering">
   <meta property="og:description" content="Predictive modeling, decision systems, and secure platforms for infrastructure and industry.">
   <meta property="og:url" content="https://www.evo.engineering/software.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.evo.engineering/images/evo_logo.jpg">
-  <meta property="og:image:alt" content="Evo Engineering logo">
+  <meta property="og:image" content="https://www.evo.engineering/assets/social/social-template.png">
+  <meta property="og:image:secure_url" content="https://www.evo.engineering/assets/social/social-template.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Evo Engineering social card">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Software Systems — Evo Engineering">
-  <meta name="twitter:description" content="Predictive intelligence and decision systems engineered for real-world operations.">
-  <meta name="twitter:image" content="https://www.evo.engineering/images/evo_logo.jpg">
-  <meta name="twitter:image:alt" content="Evo Engineering logo">
+  <meta name="twitter:title" content="Software & Intelligence - Evo Engineering">
+  <meta name="twitter:description" content="Predictive modeling, decision systems, and secure platforms for infrastructure and industry.">
+  <meta name="twitter:image" content="https://www.evo.engineering/assets/social/social-template.png">
+  <meta name="twitter:image:alt" content="Evo Engineering social card">
 
-  <!-- Canonical -->
   <link rel="canonical" href="https://www.evo.engineering/software.html">
-
   <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preload" as="image" href="images/software2-hero-1200.webp" imagesrcset="images/software2-hero-600.webp 600w, images/software2-hero-800.webp 800w, images/software2-hero-1200.webp 1200w, images/software2-hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,32 +38,51 @@
         "@type": "Organization",
         "@id": "https://www.evo.engineering/#organization",
         "name": "Evo Engineering",
-        "url": "https://www.evo.engineering",
+        "url": "https://www.evo.engineering/",
         "logo": "https://www.evo.engineering/images/evo_logo.jpg",
         "description": "Evo Engineering designs and deploys systems that stabilize, optimize, and modernize infrastructure across energy, finance, manufacturing, and software.",
         "email": "mailto:contact@evo.engineering"
       },
       {
-        "@type": "Service",
-        "@id": "https://www.evo.engineering/software.html#service",
-        "name": "Software Systems and Predictive Intelligence",
-        "url": "https://www.evo.engineering/software.html",
-        "description": "Evo Engineering builds predictive intelligence systems and secure software platforms for energy, finance, and manufacturing.",
-        "provider": {
+        "@type": "WebSite",
+        "@id": "https://www.evo.engineering/#website",
+        "name": "Evo Engineering",
+        "url": "https://www.evo.engineering/",
+        "description": "Evo Engineering designs and deploys systems that stabilize, optimize, and modernize infrastructure across energy, finance, manufacturing, and software.",
+        "publisher": {
           "@id": "https://www.evo.engineering/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.evo.engineering/software.html#webpage",
+        "url": "https://www.evo.engineering/software.html",
+        "name": "Software Systems - Evo Engineering",
+        "description": "Evo Engineering builds predictive intelligence systems and secure software platforms for energy, finance, and manufacturing - designed for operational clarity and real-world deployment.",
+        "isPartOf": {
+          "@id": "https://www.evo.engineering/#website"
         },
-        "serviceType": "Software systems engineering"
+        "publisher": {
+          "@id": "https://www.evo.engineering/#organization"
+        }
       }
     ]
   }
   </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-<header>
-  <nav>
+<header class="site-header">
+  <nav class="nav" aria-label="Primary navigation">
     <div class="brand">
       <a href="index.html" class="brand-link">
         <img src="images/evo_logo-128.jpg" alt="Evo Engineering Logo" class="logo" width="128" height="128">
@@ -71,27 +90,32 @@
       </a>
     </div>
 
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span class="sr-only">Menu</span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
     </button>
 
-    <ul id="primary-nav" class="nav-menu">
+    <ul id="primary-nav" class="nav-menu" data-nav-links>
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="energy.html">Energy</a></li>
       <li><a href="finance.html">Finance</a></li>
       <li><a href="manufacturing.html">Manufacturing</a></li>
-      <li><a href="software.html" class="active">Software</a></li>
+      <li><a href="software.html" class="active" aria-current="page">Software</a></li>
       <li><a href="ssi.html">Legacy</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="page-hero" style="background-image:url('images/software2.webp');">
+<section class="page-hero">
+  <picture class="hero-media" aria-hidden="true">
+    <source srcset="images/software2-hero-600.webp 600w, images/software2-hero-800.webp 800w, images/software2-hero-1200.webp 1200w, images/software2-hero-1600.webp 1600w" sizes="100vw" type="image/webp">
+    <img src="images/software2-hero-1200.webp" alt="" width="1200" height="1800" fetchpriority="high" decoding="async">
+  </picture>
   <div class="hero-content">
     <h1>Software & Intelligence</h1>
     <p>Prediction · Clarity · Sovereignty</p>
@@ -124,7 +148,7 @@
   </div>
 </main>
 
-<footer>
+<footer class="site-footer">
   <p>
     © 2026 Evo Engineering. All rights reserved. |
     <a href="mailto:contact@evo.engineering">contact@evo.engineering</a>

@@ -1,0 +1,86 @@
+.site-header {
+  background-color: var(--panel);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: var(--max-nav);
+  margin: 0 auto;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  min-width: max-content;
+  text-decoration: none;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--gold);
+  margin-left: 10px;
+}
+
+.brand-link:hover .brand-name {
+  color: var(--text-strong);
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-nav);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--text-strong);
+}
+
+.nav-menu a.active,
+.nav-menu a[aria-current="page"] {
+  color: var(--text-strong);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 2px;
+}
+
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: 1px solid var(--border-control);
+  border-radius: var(--radius-control);
+  background: transparent;
+  color: var(--gold);
+  cursor: pointer;
+}
+
+.nav-toggle__bar {
+  display: block;
+  height: 2px;
+  margin: 5px 0;
+  background: currentColor;
+}

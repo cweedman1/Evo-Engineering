@@ -1,18 +1,19 @@
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
+const navToggle = document.querySelector("[data-nav-toggle]");
+const navMenu = document.querySelector("[data-nav-links]");
 
 if (navToggle && navMenu) {
   const closeMenu = () => {
+    document.body.classList.remove("nav-open");
     navToggle.setAttribute("aria-expanded", "false");
     navToggle.setAttribute("aria-label", "Open navigation");
     navMenu.classList.remove("is-open");
   };
 
   navToggle.addEventListener("click", () => {
-    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
-    navToggle.setAttribute("aria-expanded", String(!isOpen));
-    navToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
-    navMenu.classList.toggle("is-open", !isOpen);
+    const isOpen = navMenu.classList.toggle("is-open");
+    document.body.classList.toggle("nav-open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    navToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
   });
 
   navMenu.addEventListener("click", (event) => {

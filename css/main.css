@@ -1,0 +1,83 @@
+/* Evo Engineering base tokens and global defaults */
+:root {
+  color-scheme: dark;
+  --bg: #0b0c10;
+  --panel: #1f2833;
+  --text: #c5c6c7;
+  --text-strong: #ffffff;
+  --gold: #ffd700;
+  --gold-strong: #ffe45c;
+  --link-focus: #ffd700;
+  --border-control: rgba(255,255,255,0.18);
+  --border-subtle: rgba(255,255,255,0.08);
+  --overlay-home: rgba(0,0,0,0.4);
+  --overlay-page: rgba(0,0,0,0.35);
+  --shadow-card: 0 4px 10px rgba(0,0,0,0.5);
+  --shadow-card-hover: 0 8px 20px rgba(0,0,0,0.7);
+  --radius-card: 8px;
+  --radius-control: 4px;
+  --max-nav: 1180px;
+  --max-content: 900px;
+  --gap-nav: 26px;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0;
+}
+
+main {
+  min-height: 60vh;
+}
+
+:focus-visible {
+  outline: 2px solid var(--link-focus);
+  outline-offset: 4px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

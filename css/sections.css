@@ -1,0 +1,73 @@
+.container,
+.content {
+  width: min(100% - 40px, var(--max-content));
+  margin: 0 auto;
+}
+
+main.container {
+  padding: 56px 0;
+}
+
+.content h2 {
+  color: var(--text-strong);
+  line-height: 1.25;
+}
+
+.content a {
+  color: var(--gold);
+}
+
+.content li {
+  margin-bottom: 8px;
+}
+
+.project-block {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.project-block:last-child {
+  border-bottom: none;
+}
+
+.project-note,
+.project-question {
+  color: #aaa;
+  font-style: italic;
+}
+
+.project-question {
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+.research-item {
+  margin-top: 28px;
+}
+
+.research-item h3 {
+  color: var(--text-strong);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.project-link {
+  margin-top: 8px;
+}
+
+.project-link a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.project-link a:hover {
+  color: var(--text-strong);
+  text-decoration: underline;
+}
+
+.project-link a:visited {
+  color: var(--gold);
+}

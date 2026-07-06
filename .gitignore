@@ -1,2 +1,3 @@
 images/_archive/
 *.report.html
+.lighthouse/
