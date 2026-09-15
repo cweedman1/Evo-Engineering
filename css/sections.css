@@ -71,3 +71,89 @@ main.container {
 .project-link a:visited {
   color: var(--gold);
 }
+
+.home-section {
+  width: min(100% - 40px, var(--max-content));
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.home-section + .home-section {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.home-intro {
+  max-width: 760px;
+}
+
+.home-intro h2,
+.home-invitation h2,
+.capability-item h3,
+.proof-column h3 {
+  color: var(--text-strong);
+  line-height: 1.25;
+}
+
+.section-label {
+  margin-bottom: 8px;
+  color: var(--gold-strong);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.capability-list,
+.proof-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 40px;
+  margin-top: 32px;
+}
+
+.capability-item,
+.proof-column {
+  padding: 24px 0 18px;
+  border-top: 1px solid var(--border-control);
+}
+
+.capability-item p,
+.proof-column p {
+  margin-bottom: 0;
+}
+
+.home-method {
+  max-width: 760px;
+  margin: 28px 0 0;
+  padding-left: 18px;
+  border-left: 2px solid var(--gold);
+  color: var(--text-strong);
+}
+
+.home-domains .features {
+  padding: 30px 0 0;
+}
+
+.home-domains .feature h2 {
+  margin: 18px 0 0;
+  color: var(--text-strong);
+}
+
+.proof-column .project-link {
+  margin-top: 14px;
+}
+
+.home-invitation {
+  background: var(--panel);
+  padding: 56px 20px;
+  text-align: center;
+}
+
+.home-invitation-content {
+  width: min(100%, 720px);
+  margin: 0 auto;
+}
+
+.home-invitation .project-link {
+  margin: 18px 0 0;
+}

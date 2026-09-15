@@ -52,6 +52,39 @@
   max-width: 680px;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-action {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-control);
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-action-primary {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+.hero-action:hover {
+  border-color: var(--gold-strong);
+  color: var(--text-strong);
+}
+
+.hero-action-primary:hover {
+  background: var(--gold-strong);
+  color: var(--bg);
+}
+
 .page-hero {
   min-height: 65vh;
   position: relative;
