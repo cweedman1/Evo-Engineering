@@ -4,7 +4,21 @@
   margin: 0 auto;
 }
 
-main.container {
+.content-wide {
+  width: min(100% - 40px, var(--max-wide));
+}
+
+.container-wide {
+  width: min(100% - 40px, var(--max-wide));
+  margin: 0 auto;
+}
+
+.container-wide .content-wide {
+  width: 100%;
+}
+
+main.container,
+main.container-wide {
   padding: 56px 0;
 }
 
@@ -73,7 +87,7 @@ main.container {
 }
 
 .home-section {
-  width: min(100% - 40px, var(--max-content));
+  width: min(100% - 40px, var(--max-wide));
   margin: 0 auto;
   padding: 64px 0;
 }
@@ -84,6 +98,10 @@ main.container {
 
 .home-intro {
   max-width: 760px;
+}
+
+.home-intro-wide {
+  max-width: 880px;
 }
 
 .home-intro h2,
@@ -156,4 +174,314 @@ main.container {
 
 .home-invitation .project-link {
   margin: 18px 0 0;
+}
+
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 38px;
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+}
+
+.principle-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.problem-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 32px;
+  margin-top: 32px;
+}
+
+.principle-item {
+  min-height: 210px;
+  padding: 28px 24px;
+  background: var(--surface);
+}
+
+.principle-index {
+  display: block;
+  margin-bottom: 36px;
+  color: var(--gold-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.principle-item h3 {
+  margin-bottom: 10px;
+  color: var(--text-strong);
+  font-size: 1.1rem;
+}
+
+.principle-item p {
+  margin-bottom: 0;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+}
+
+.operating-flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 34px;
+  border: 1px solid var(--border-control);
+  background: rgba(255,255,255,0.018);
+}
+
+.flow-step {
+  position: relative;
+  padding: 18px 22px;
+  color: var(--text-strong);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.flow-step:not(:last-child) {
+  border-right: 1px solid var(--border-control);
+}
+
+.flow-step:not(:last-child)::after {
+  content: "\2192";
+  position: absolute;
+  right: -11px;
+  top: 50%;
+  z-index: 1;
+  width: 22px;
+  transform: translateY(-50%);
+  background: var(--bg);
+  color: var(--gold);
+}
+
+.system-showcase,
+.portfolio-grid,
+.evidence-grid,
+.contact-paths,
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.system-showcase {
+  margin-top: 36px;
+}
+
+.system-card,
+.portfolio-card,
+.evidence-card,
+.contact-card,
+.editorial-panel {
+  position: relative;
+  padding: 30px;
+  border: 1px solid var(--border-control);
+  background: linear-gradient(145deg, rgba(255,255,255,0.035), rgba(255,255,255,0.012));
+}
+
+.system-card::before,
+.portfolio-card::before,
+.evidence-card::before,
+.contact-card::before,
+.editorial-panel::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 54px;
+  height: 2px;
+  background: var(--gold);
+}
+
+.system-card-featured {
+  min-height: 320px;
+}
+
+.card-kicker,
+.portfolio-status {
+  margin-bottom: 16px;
+  color: var(--gold-strong);
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.system-card h3,
+.portfolio-card h3,
+.evidence-card h3,
+.contact-card h2,
+.contact-card h3,
+.editorial-panel h2,
+.editorial-panel h3 {
+  margin-bottom: 12px;
+  color: var(--text-strong);
+}
+
+.system-card h3,
+.portfolio-card h3 {
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.system-card p,
+.portfolio-card p,
+.evidence-card p,
+.contact-card p,
+.editorial-panel p {
+  color: var(--text);
+}
+
+.system-card ul,
+.portfolio-card ul {
+  margin: 18px 0 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+}
+
+.system-card li,
+.portfolio-card li {
+  margin-bottom: 6px;
+}
+
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 24px;
+}
+
+.card-links a {
+  color: var(--gold-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card-links a:hover {
+  color: var(--text-strong);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.evidence-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 34px;
+}
+
+.evidence-card {
+  min-height: 230px;
+}
+
+.portfolio-main {
+  width: min(100% - 40px, var(--max-wide));
+  margin: 0 auto;
+  padding: 68px 0 80px;
+}
+
+.portfolio-intro {
+  max-width: 830px;
+  margin-bottom: 64px;
+}
+
+.portfolio-section + .portfolio-section {
+  margin-top: 76px;
+  padding-top: 66px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.portfolio-section {
+  scroll-margin-top: 90px;
+}
+
+.portfolio-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.portfolio-heading h2 {
+  margin: 0;
+  color: var(--text-strong);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.portfolio-heading p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.portfolio-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.portfolio-card-wide {
+  grid-column: span 2;
+}
+
+.portfolio-note {
+  margin-top: 54px;
+  padding: 30px;
+  border-left: 2px solid var(--gold);
+  background: var(--surface);
+}
+
+.about-section {
+  padding: 54px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.about-section:first-child {
+  padding-top: 0;
+}
+
+.about-section:last-child {
+  border-bottom: 0;
+}
+
+.about-lede {
+  max-width: 900px;
+  color: var(--text-strong);
+  font-size: clamp(1.25rem, 2.3vw, 1.8rem);
+  line-height: 1.45;
+}
+
+.editorial-grid {
+  margin-top: 30px;
+}
+
+.editorial-panel ul {
+  padding-left: 18px;
+}
+
+.contact-paths {
+  margin: 34px 0 54px;
+}
+
+.contact-card {
+  min-height: 260px;
+}
+
+.direct-contact {
+  padding: 34px;
+  border: 1px solid var(--border-control);
+  background: var(--surface-raised);
+}
+
+.direct-contact p:last-child {
+  margin-bottom: 0;
+}
+
+.direct-contact a {
+  color: var(--gold-strong);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.direct-contact a:hover {
+  color: var(--text-strong);
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }

@@ -1,9 +1,11 @@
 .site-header {
-  background-color: var(--panel);
+  background: rgba(8, 10, 13, 0.96);
+  border-bottom: 1px solid var(--border-subtle);
   padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  backdrop-filter: blur(14px);
 }
 
 .nav {
@@ -49,19 +51,19 @@
 }
 
 .nav-menu a {
-  color: var(--gold);
+  color: var(--text);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 650;
   transition: color 0.2s ease;
 }
 
 .nav-menu a:hover {
-  color: var(--text-strong);
+  color: var(--gold-strong);
 }
 
 .nav-menu a.active,
 .nav-menu a[aria-current="page"] {
-  color: var(--text-strong);
+  color: var(--gold-strong);
   border-bottom: 2px solid var(--gold);
   padding-bottom: 2px;
 }

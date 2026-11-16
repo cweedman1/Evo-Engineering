@@ -39,13 +39,47 @@
   .nav-menu a[aria-current="page"] {
     border-bottom: none;
   }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-system-map {
+    min-height: 330px;
+  }
+
+  .hero-system-map svg {
+    min-height: 330px;
+  }
+
+  .principle-grid,
+  .portfolio-grid-three {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .principle-grid-three .principle-item:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .portfolio-card-wide {
+    grid-column: auto;
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-heading {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
 
 @media (max-width: 720px) {
   .hero,
   .page-hero {
-    min-height: 58vh;
-    padding: 72px 18px;
+    min-height: 50vh;
+    padding: 66px 18px;
   }
 
   .hero h1,
@@ -70,12 +104,21 @@
   }
 
   .container,
-  .content {
+  .content,
+  .content-wide,
+  .container-wide,
+  .portfolio-main {
     width: min(100% - 32px, var(--max-content));
   }
 
   main.container {
     padding: 40px 0;
+  }
+}
+
+@media (min-width: 721px) {
+  .hero-compound {
+    white-space: nowrap;
   }
 }
 
@@ -114,6 +157,7 @@
   }
 
   .capability-list,
+  .problem-list,
   .proof-columns {
     grid-template-columns: 1fr;
   }
@@ -124,6 +168,76 @@
     max-width: 280px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .hero-systems {
+    min-height: auto;
+  }
+
+  .hero-systems .hero-actions {
+    margin-left: 0;
+  }
+
+  .hero-system-map {
+    min-height: 280px;
+    margin: -20px -34px -40px;
+    opacity: 0.72;
+  }
+
+  .hero-system-map svg {
+    min-height: 280px;
+  }
+
+  .hero-proof {
+    display: grid;
+    gap: 8px;
+  }
+
+  .principle-grid,
+  .system-showcase,
+  .portfolio-grid,
+  .portfolio-grid-three,
+  .contact-paths,
+  .editorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principle-item {
+    min-height: auto;
+  }
+
+  .principle-index {
+    margin-bottom: 18px;
+  }
+
+  .operating-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-step:not(:last-child) {
+    border-right: 0;
+    border-bottom: 1px solid var(--border-control);
+  }
+
+  .flow-step:not(:last-child)::after {
+    content: "\2193";
+    top: auto;
+    right: 50%;
+    bottom: -13px;
+    transform: translateX(50%);
+  }
+
+  .portfolio-heading {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .system-card,
+  .portfolio-card,
+  .evidence-card,
+  .contact-card,
+  .editorial-panel {
+    padding: 24px;
   }
 }
 

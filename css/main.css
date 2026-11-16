@@ -1,12 +1,16 @@
 /* Evo Engineering base tokens and global defaults */
 :root {
   color-scheme: dark;
-  --bg: #0b0c10;
-  --panel: #1f2833;
-  --text: #c5c6c7;
+  --bg: #080a0d;
+  --panel: #151b22;
+  --surface: #10151b;
+  --surface-raised: #1a212a;
+  --text: #c8cdd2;
+  --text-muted: #929ba5;
   --text-strong: #ffffff;
   --gold: #ffd700;
   --gold-strong: #ffe45c;
+  --gold-muted: #b99c23;
   --link-focus: #ffd700;
   --border-control: rgba(255,255,255,0.18);
   --border-subtle: rgba(255,255,255,0.08);
@@ -18,8 +22,9 @@
   --radius-control: 4px;
   --max-nav: 1180px;
   --max-content: 900px;
+  --max-wide: 1180px;
   --gap-nav: 26px;
-  --font-body: 'Montserrat', sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -29,9 +34,12 @@
 body {
   margin: 0;
   font-family: var(--font-body);
-  background-color: var(--bg);
+  background:
+    radial-gradient(circle at 88% -10%, rgba(255, 215, 0, 0.055), transparent 34rem),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
+  font-synthesis: none;
 }
 
 body.nav-open {
@@ -58,7 +66,8 @@ p {
 h1,
 h2,
 h3 {
-  letter-spacing: 0;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 main {
