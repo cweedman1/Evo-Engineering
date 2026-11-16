@@ -170,12 +170,16 @@
     margin-left: auto;
   }
 
-  .hero-systems {
+  .hero-photo {
     min-height: auto;
   }
 
-  .hero-systems .hero-actions {
+  .hero-photo .hero-actions {
     margin-left: 0;
+  }
+
+  .hero-photo .hero-media img {
+    object-position: center;
   }
 
   .hero-system-map {

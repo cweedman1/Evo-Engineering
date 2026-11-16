@@ -29,6 +29,7 @@
 
   <link rel="canonical" href="https://www.evo.engineering/">
   <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preload" as="image" href="images/home-hero-1200.webp" imagesrcset="images/home-hero-600.webp 600w, images/home-hero-800.webp 800w, images/home-hero-1200.webp 1200w, images/home-hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,7 +111,11 @@
   </header>
 
   <main>
-    <section class="hero hero-systems">
+    <section class="hero hero-photo">
+      <picture class="hero-media" aria-hidden="true">
+        <source srcset="images/home-hero-600.webp 600w, images/home-hero-800.webp 800w, images/home-hero-1200.webp 1200w, images/home-hero-1600.webp 1600w" sizes="100vw" type="image/webp">
+        <img src="images/home-hero-1200.webp" alt="" width="1200" height="962" fetchpriority="high" decoding="async">
+      </picture>
       <div class="hero-layout">
         <div class="hero-content">
           <p class="hero-eyebrow">Software · Infrastructure · Regulated Work</p>

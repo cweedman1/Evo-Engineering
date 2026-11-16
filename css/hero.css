@@ -19,17 +19,8 @@
   z-index: 1;
 }
 
-.hero-systems {
-  background:
-    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px),
-    radial-gradient(circle at 78% 48%, rgba(255, 215, 0, 0.08), transparent 25rem),
-    #05080b;
-  background-size: 72px 72px, 72px 72px, auto, auto;
-}
-
-.hero-systems::after {
-  background: linear-gradient(90deg, rgba(5, 8, 11, 0.98) 0%, rgba(5, 8, 11, 0.8) 48%, rgba(5, 8, 11, 0.12) 100%);
+.hero-photo::after {
+  background: linear-gradient(90deg, rgba(5, 8, 11, 0.98) 0%, rgba(5, 8, 11, 0.84) 44%, rgba(5, 8, 11, 0.3) 72%, rgba(5, 8, 11, 0.12) 100%);
 }
 
 .hero-layout {
@@ -54,6 +45,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+}
+
+.hero-photo .hero-media img {
   object-position: center;
 }
 
